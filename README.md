@@ -1,1 +1,1 @@
-# Trying to learn js
+# Trying to learn javascript
