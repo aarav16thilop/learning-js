@@ -206,7 +206,7 @@ var myCar = {
     console.log(speed * time + " miles");
     },
     logDriver: function isDriver(){
-        console.log("The driver of this car is " + driver.this )
+        console.log("The driver of this car is " + this.driver )
     }
 
 };
