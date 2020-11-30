@@ -202,13 +202,16 @@ var myCar = {
     
     maxSpeed:120,
     driver:"Aarav",
-    distanceToTravel:function drive(speed,time){
+    distanceToTravel:function isDriving(speed,time){
     console.log(speed * time + " miles");
-
+    },
+    logDriver: function isDriver(){
+        console.log("The driver of this car is " + driver.this )
     }
+
 };
 
-console.log(myCar.driver);
+myCar.logDriver();
 myCar.distanceToTravel(75,2);
 
 
