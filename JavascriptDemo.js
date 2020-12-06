@@ -206,13 +206,30 @@ var myCar = {
     console.log(speed * time + " miles");
     },
     logDriver: function isDriver(){
-        console.log("The driver of this car is " + this.driver )
+        ("The driver of this car is " + this.driver )
     }
 
 };
 
-myCar.logDriver();
-myCar.distanceToTravel(75,2);
+var Car = function(maxSpeed,driver){
+
+    this.maxSpeed = maxSpeed;
+    this.driver = driver;
+    this.drive = drive;
+};
+this.logDriver = function(){
+
+    "The driver is " + this.driver
+};
+
+var myCar1 = new Car = (40,"test1");
+var myCar2 = new Car = (70,"test2");
+var myCar3 = new Car = (120,"test3");
+
+myCar.drive = (30,5);
+myCar2.logmaxSpeed
+
+
 
 
 
