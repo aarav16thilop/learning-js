@@ -227,7 +227,26 @@ var myCar2 = new Car = (70,"test2");
 var myCar3 = new Car = (120,"test3");
 
 myCar.drive = (30,5);
-myCar2.logmaxSpeed
+myCar2.logmaxSpeed;
+//-----------------------------------------------------------------------------------------
+var birthday = new Date (2010,4,16);
+var birthday2 = new Date (2010,4,16);
+
+//console.log(birthday.getFullYear());
+//console.log(birthday.getMonth());
+//console.log(birthday.getDay());
+//console.log(birthday.getDate());
+//console.log(birthday.getHours());
+
+if(birthday.getTime() == birthday2.getTime()){
+
+    console.log("Birthdays are the same");
+
+}else {
+    
+    console.log("Birthdays are different");
+
+};
 
 
 
