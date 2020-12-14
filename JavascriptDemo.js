@@ -5,7 +5,6 @@
 };*/
 
 
-
 /* function calculator(var1,var2){
     console.log(var1 + var2);
     console.log(var1 - var2);
@@ -16,22 +15,13 @@
 calculator(616,11);*/
 
 
-
- 
-    
-
-
-
-
-
-
 /*for (let i = 0; i < 10; i++){
     console.log ("This is a loop" + i)
 };*/
 
+
 //data (variables, numbers, strings...) - nouns
 //actions (functions, methods) - verbs
-
 
 
 /*function isEvenNumber(number){    
@@ -47,8 +37,8 @@ calculator(616,11);*/
 
 };
 
-console.log(isEvenNumber("hi"));*/
 
+console.log(isEvenNumber("hi"));*/
 
 
 /*function isPrimeNumber(number){
@@ -95,6 +85,7 @@ console.log (isPrimeNumber(7))*/
 else{document.write ("Sorry, you can't come") 
 
 }; */
+
 
 
 /*var loading = 0;
@@ -198,7 +189,7 @@ console.log(myString.toLowerCase());
 
 //var myCar = new Object(myCar.maxSpeed = 120); to create an object OR...
 
-var myCar = {
+/*var myCar = {
     
     maxSpeed:120,
     driver:"Aarav",
@@ -228,9 +219,9 @@ var myCar3 = new Car = (120,"test3");
 
 myCar.drive = (30,5);
 myCar2.logmaxSpeed;
-//-----------------------------------------------------------------------------------------
-var birthday = new Date (2010,4,16);
-var birthday2 = new Date (2010,4,16);
+*/
+/*var birthday = new Date (2010,4,16);
+var birthday2 = new Date (2010,4,16);*/
 
 //console.log(birthday.getFullYear());
 //console.log(birthday.getMonth());
@@ -238,7 +229,7 @@ var birthday2 = new Date (2010,4,16);
 //console.log(birthday.getDate());
 //console.log(birthday.getHours());
 
-if(birthday.getTime() == birthday2.getTime()){
+/*if(birthday.getTime() == birthday2.getTime()){
 
     console.log("Birthdays are the same");
 
@@ -247,7 +238,20 @@ if(birthday.getTime() == birthday2.getTime()){
     console.log("Birthdays are different");
 
 };
+*/
 
+var merryChristmas = document.getElementById("christmas");
+
+const today = new Date();
+
+const christmas = new Date(today.getFullYear(),11,25);
+
+if (today.getMonth() === 11 && today.getDate() === 25) { 
+     merryChristmas.textContent = "Merry Christmas"
+     
+}else{
+    merryChristmas.textContent = "It's not christmas yet"
+}
 
 
 
