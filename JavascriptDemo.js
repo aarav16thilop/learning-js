@@ -1,3 +1,4 @@
+
 var merryChristmas = document.getElementById("christmas");
 
 const today = new Date();
@@ -18,7 +19,6 @@ if (today.getMonth() === 11 && today.getDate() === 25) {
     merryChristmas.textContent = "There are " + daysLeft + " until Christmas!";
 };
 
-      
 
 
 
