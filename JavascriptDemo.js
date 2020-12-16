@@ -1,24 +1,36 @@
-
-var merryChristmas = document.getElementById("christmas");
-
+/*
 const today = new Date();
 
-const christmas = new Date(today.getFullYear(),11,25);
+const birthdate = new Date(today.getFullYear(),str1,str2);
 
-const timeLeft = christmas.getTime()-today.getTime();
+const timeLeft = birthdate.getTime()-today.getTime();
 
 const oneDay = 1000*3600*24;
 
 const daysLeft = Math.ceil(timeLeft/oneDay) + " days";
 
-if (today.getMonth() === 11 && today.getDate() === 25) { 
-     merryChristmas.textContent = "Merry Christmas!"
-     
-}else{
-   
-    merryChristmas.textContent = "There are " + daysLeft + " until Christmas!";
-};
 
+};*/
+
+function fn(){
+    
+    var str1 = document.getElementById("text1").value;
+
+    var str2 = document.getElementById("text2").value;
+     
+    const today = new Date();
+
+    const birthdate = new Date(today.getFullYear(),str1,str2);
+
+    const timeLeft = birthdate.getTime()-today.getTime();
+
+    const oneDay = 1000*3600*24;
+
+    const daysLeft = Math.ceil(timeLeft/oneDay) + " days";
+
+    alert("Your birthday is in " + daysLeft)
+};
+    
 
 
 
