@@ -1,8 +1,18 @@
+var name = prompt("What is your name?");
+
+if(isNaN(name) == false){
+   alert("Try again")
+
+}else{alert("Hey "+ name +" Click on the empty box multiple times!")
+
+};
+
+
 var changeColor = document.getElementById("color_changer");
 var colors = ["red", "blue", "green", "yellow"];
 var counter = 0;
 
-function colorChanger(){
+changeColor.onclick = function colorChanger(){
      if(counter > 3){
         counter = 0;
      };
@@ -13,3 +23,4 @@ function colorChanger(){
 }
 
 setInterval(colorChanger, 3000);
+
