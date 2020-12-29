@@ -1,37 +1,15 @@
-/*
-const today = new Date();
+var changeColor = document.getElementById("color_changer");
+var colors = ["red", "blue", "green", "yellow"];
+var counter = 0;
 
-const birthdate = new Date(today.getFullYear(),str1,str2);
+function colorChanger(){
+     if(counter > 3){
+        counter = 0;
+     };
 
-const timeLeft = birthdate.getTime()-today.getTime();
+     changeColor.style.background = colors[counter];
+        counter++
 
-const oneDay = 1000*3600*24;
+}
 
-const daysLeft = Math.ceil(timeLeft/oneDay) + " days";
-
-
-};*/
-
-function fn(){
-    
-    var str1 = document.getElementById("text1").value;
-
-    var str2 = document.getElementById("text2").value;
-     
-    const today = new Date();
-
-    const birthdate = new Date(today.getFullYear(),str1,str2);
-
-    const timeLeft = birthdate.getTime()-today.getTime();
-
-    const oneDay = 1000*3600*24;
-
-    const daysLeft = Math.ceil(timeLeft/oneDay) + " days";
-
-    alert("Your birthday is in " + daysLeft)
-};
-    
-
-
-
-
+setInterval(colorChanger, 3000);
